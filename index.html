@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Aceites Esenciales</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f1; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 90%; max-width: 400px; }
+        h2 { color: #4a7c44; text-align: center; margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; color: #555; font-size: 14px; }
+        input, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #6da367; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; margin-top: 20px; transition: 0.3s; }
+        button:hover { background-color: #4a7c44; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Solicitar Asesoría</h2>
+    <form action="https://formspree.io/f/xjgarybj" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="email" required>
+
+        <label>Consulta sobre Aceites y/o limpiezas:</label>
+        <textarea name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</div>
+
+</body>
+</html>
